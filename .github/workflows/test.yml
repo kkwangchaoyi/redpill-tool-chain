@@ -34,6 +34,7 @@ jobs:
 
       - name: 配置引导镜像
         run: |
+          ./redpill_tool_chain.sh build ds3615xs-7.0.1-42218
           cp sample_user_config.json ${{matrix.platform}}_user_config.json
 
           # 调整VID和PID
